@@ -1,3 +1,4 @@
+const { getInfo } = require("./Information/information")
 const argv = require('yargs').options({
     direccion: {
 
@@ -7,4 +8,8 @@ const argv = require('yargs').options({
     }
 }).argv
 
+
 console.log(argv.direccion);
+getInfo(argv.direccion).then(console.log
+).catch(console.log
+)
